@@ -10,7 +10,7 @@ public class ShipTests
     public void Ship_HasCorrectValues()
     {
         // arrange
-        const string name = "ShipName";
+        const string? name = "ShipName";
         const int size = 10;
 
         // act
@@ -25,7 +25,7 @@ public class ShipTests
     [InlineData(" ")]
     [InlineData("")]
     [InlineData(null)]
-    public void Ship_ThrowsArgumentNullException(string name)
+    public void Ship_ThrowsArgumentNullException(string? name)
     {
         // act & assert
         Assert.Throws<ArgumentNullException>(() => new Ship(name, 5));

@@ -41,13 +41,13 @@ public class ShipPlacementServiceTests
                 BoardSize = 10,
                 ShipOptions = new List<ShipOptions>
                 {
-                    new ShipOptions
+                    new()
                     {
                         Name = "Battleship",
                         Size = 5,
                         Instances = 1
                     },
-                    new ShipOptions
+                    new()
                     {
                         Name = "Destroyer",
                         Size = 4,
@@ -64,13 +64,13 @@ public class ShipPlacementServiceTests
                 BoardSize = 10,
                 ShipOptions = new List<ShipOptions>
                 {
-                    new ShipOptions
+                    new()
                     {
                         Name = "Battleship",
                         Size = 5,
                         Instances = 2
                     },
-                    new ShipOptions
+                    new()
                     {
                         Name = "Destroyer",
                         Size = 4,

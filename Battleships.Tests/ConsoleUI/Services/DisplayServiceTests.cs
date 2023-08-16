@@ -118,7 +118,7 @@ public class DisplayServiceTests
     {
         // arrange
         IDisplayService displayService = new DisplayService(_boardProvider);
-        var exception = new Exception("exampleMessage");
+        var exception = new Exception("ExampleMessage");
 
         // act
         var output = CaptureConsoleOutput(() => { displayService.DisplayException(exception); });

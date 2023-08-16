@@ -1,5 +1,4 @@
 ﻿using Battleships.Application.Services.Implementations;
-using Battleships.Application.Services.Interfaces;
 using Battleships.Common.Providers.Interfaces;
 using Battleships.Domain.Enums;
 using Battleships.Domain.Models;
@@ -19,11 +18,11 @@ public class GameStateServiceTests
         // arrange
         var ships = new List<Ship>
         {
-            new("exampleName", 5),
-            new("exampleName", 5),
-            new("exampleName", 5),
+            new("ExampleName", 5),
+            new("ExampleName", 5),
+            new("ExampleName", 5),
         };
-        ships.ForEach(s => s.OccupiedCells.AddRange(Enumerable.Repeat(new Cell { Status = status }, s.Size -1)));
+        ships.ForEach(s => s.OccupiedCells.AddRange(Enumerable.Repeat(new Cell { Status = status }, s.Size - 1)));
         var shipsProvider = Substitute.For<IShipsProvider>();
         shipsProvider.Ships.Returns(ships);
 

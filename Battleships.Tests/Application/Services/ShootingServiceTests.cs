@@ -24,8 +24,8 @@ public class ShootingServiceTests
 
     [Theory]
     [MemberData(nameof(TestData))]
-    public void ShootingService_ShootAtCoordinates_ValidStatus_ReturnsExpectedResult(CellStatus cellStatus, List<Ship> ships,
-        ShotResult expectedResult)
+    public void ShootingService_ShootAtCoordinates_ValidStatus_ReturnsExpectedResult(CellStatus cellStatus,
+        List<Ship> ships, ShotResult expectedResult)
     {
         // Arrange
         var cell = _boardProvider.Board.GetCellForCoordinates(0, 0);
@@ -67,7 +67,7 @@ public class ShootingServiceTests
             CellStatus.Occupied,
             new List<Ship>
             {
-                new("exampleName", 2)
+                new("ExampleName", 2)
             },
             ShotResult.Hit
         };
@@ -77,7 +77,7 @@ public class ShootingServiceTests
             CellStatus.Hit,
             new List<Ship>
             {
-                new("exampleName", 2)
+                new("ExampleName", 2)
             },
             ShotResult.Hit
         };

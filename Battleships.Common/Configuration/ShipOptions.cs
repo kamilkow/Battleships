@@ -2,7 +2,7 @@
 
 public class ShipOptions
 {
-    public string Name { get; init; }
+    public string? Name { get; init; }
 
     public int Size { get; init; }
 

@@ -4,7 +4,7 @@ namespace Battleships.Domain.Models;
 
 public class Ship
 {
-    public Ship(string name, int size)
+    public Ship(string? name, int size)
     {
         if (string.IsNullOrWhiteSpace(name))
             throw new ArgumentNullException(nameof(name));
@@ -16,7 +16,7 @@ public class Ship
         Size = size;
     }
 
-    public string Name { get; }
+    public string? Name { get; }
 
     public int Size { get; }
 

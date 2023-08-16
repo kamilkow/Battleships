@@ -1,7 +1,4 @@
-﻿using Battleships.Domain.Enums;
-using Battleships.Domain.Models;
-
-namespace Battleships.Application.Services.Interfaces;
+﻿namespace Battleships.Application.Services.Interfaces;
 
 public interface IGameStateService
 {
