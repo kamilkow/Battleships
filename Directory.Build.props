@@ -1,0 +1,20 @@
+<Project>
+    <!-- Information -->
+    <PropertyGroup>
+        <Title>Battleships</Title>
+        <Authors>Kamil Kowalczyk</Authors>
+        <Description>Battleships game</Description>
+        <RepositoryUrl>https://github.com/kamilkow/Battleships</RepositoryUrl>
+    </PropertyGroup>
+    <!-- Shared Settings -->
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <LangVersion>11</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+    </PropertyGroup>
+    <!-- Central Package Management -->
+    <PropertyGroup>
+        <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    </PropertyGroup>
+</Project>
